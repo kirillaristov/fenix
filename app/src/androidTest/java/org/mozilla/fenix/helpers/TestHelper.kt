@@ -223,4 +223,6 @@ object TestHelper {
         this.waitForIdle()
         Assert.assertNotNull(obj.waitForExists(waitingTime))
     }
+
+    fun getStringResource(id: Int) = appContext.resources.getString(id, appName)
 }
